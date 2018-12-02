@@ -1,113 +1,60 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+Rails[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# browser-template
+# Freedom Institute
+Below is the url where the application is hosted
+[student-client Repo](https://github.com/MaryJosephA/student-client)
 
-A template for starting front-end projects. Webpack for `require` system, build
-pipeline, and development server. Boostrap and Handlebars.js included. No
-front-end frameworks included.
+[student-client Deployed](https://maryjosepha.github.io/student-client/)
 
-## Installation
+[student-rails-api Repo](https://github.com/MaryJosephA/student-api)
 
-1. [Download](../../archive/master.zip) this template.
-1. Move to the `wdi/projects` directory, then unzip the template directory with
-    `unzip /Users/<user-name>/Downloads/browser-template-master.zip`.
-1. Rename the template directory from `browser-template-master` to
-    `<project-name>-client`.
-1. Empty [`README.md`](README.md) and fill with your own content.
-1. Replace all instances of `ga-wdi-boston.browser-template` with the name of
-    your project.
-1. Move into the new project and `git init`.
-1. Add all of the files in your project with the command `git add --all`.
-      - **Note: This is the only time you should run this command!**
-1. Commit all of your files with the command `git commit`.
-      - Your commit title should read `Initial commit`.
-1. Install dependencies with `npm install`.
-1. Create a new repository on [github.com](https://github.com),
-    _not GitHub Enterprise_.
-1. Name the new repository with the same name used on Step 3.
-1. Follow the instructions on your new repository's setup page. For details on
-   how to push to Github, refer to the section on Github entitled "…or push an existing
-   repository from the command line." Further documentation can be found [here](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/).
+[product-rails-api Deployed](https://enigmatic-plains-70569.herokuapp.com/)
 
-## Structure
+## Technologies
+HTML, CSS, BOOTSTARP JAVASCRIPT, WEB API RESTFUL SERVICE, RUBY ON RAILS
 
-Developers should store JavaScript files in [`assets/scripts`](assets/scripts).
-The "manifest" or entry-point is
-[`assets/scripts/app.js`](assets/scripts/app.js). In general, only
-application initialization goes in this file. It's normal for developers to
-start putting all code in this file, but encourage them to break out different
-responsibilities and use the `require` syntax put references where they're
-needed.
+## project planning
+1.  Created wirframe and user story
+2. Downloaded the Browser Template
+3. Download this template.
+4. Replaced all the instance of browser template to product-client
+5. Initialized the project in the git using git init
+6. Added all the filed using git add --all
+7. committed all the files using git commit origin master
+8. Created a new repository in git hub then ran npm Install
+9. created branches in the git
+10.scaffold the resources which created Model View and controller  and the
+  database schema automatically
+11.Then changed the param to current user and run db migrate
+13.Curl Script the resources
+14.  Hosted the site in the Heroku
 
-Developers should set `apiUrls.production` and `apiUrls.development` in
-[`assets/scripts/config.js`](assets/scripts/config.js).  With
-`apiUrls` set, developers may rely on `apiUrl` as the base for API
-URLs.
 
-Developers should store styles in [`assets/styles`](assets/styles) and load them
-from [`assets/styles/index.scss`](assets/styles/index.scss). Bootstrap version 3 is
-included in this template.
+## Challenges faced
 
-Developers should use [getFormFields](get-form-fields.md) to retrieve form data
-to send to an API.
+1.  Struggled with connecting the api client and backend but overcame by reading
+    documetation.
+2.  Had difficulty in displaying the data but managed to
+3.  used google chrome to debug the issue
 
-To deploy a browser-template based SPA, run `grunt deploy`.
+## User Stories
 
-## Adding Images
+1. User sign up with email and password confirmation
+2. User should be a able to sign in with email and password
+3. User should able to sign in and change password with current and new password
+4. User should able to sign in and  show, create, update, and delete a product
+5. User should be able to get feedback after each action
 
-To add images to your project, you must store them in the `public` directory.
-To use the image in HTML or CSS, write the path to the image like this:
+## Unsolved problems
+1. Will add Join table to see which student has how many courses
+2. Will migrate to many to many relationship
 
-```html
-<img src="public/cat.jpg">
-```
-or
-```css
-#my-cool-div {
-  background-image: url('public/cat.jpg')
-}
-```
+## [WireFrame] WireFrame https://github.com/MaryJosephA/product-client/tree/master/public/wireframe.JPG
 
-Note that there's no `./` or `/` in front of `public/filename.jpg`.
-
-## Adding Fonts
-
-To add custom fonts to your app, you can either use a CDN like Google Fonts, or
-you can download the fonts and save them in the `public` directory. If you use
-the former method, follow the directions on the website providing the fonts.
-
-For local fonts, put the files in `public`, and then import and use them in a
-`.scss` file like this:
-
-```scss
-@font-face {
-  font-family: 'Nature Beauty';
-  src: url('public/Nature-Beauty.ttf') format('truetype');
-}
-
-.element-with-custom-font {
-  font-family: 'Nature Beauty';
-}
-```
-
-## Tasks
-
-Developers should run these often!
-
-- `grunt nag` or just `grunt`: runs code quality analysis tools on your code
-    and complains
-- `grunt make-standard`: reformats all your code in the JavaScript Standard Style
-- `grunt <server|serve|s>`: generates bundles, watches, and livereloads
-- `grunt build`: place bundled styles and scripts where `index.html` can find
-    them
-
-## Additional Resources
-
-- [Modern Javascript Explained for Dinosaurs](https://medium.com/@peterxjang/modern-javascript-explained-for-dinosaurs-f695e9747b70)
-- [Making Sense of Front End Build Tools](https://medium.freecodecamp.org/making-sense-of-front-end-build-tools-3a1b3a87043b)
+## [Student Table] Product Table  https://github.com/MaryJosephA/product-rails-api/tree/master/public/table.JPG
 
 ## [License](LICENSE)
 
-1. All content is licensed under a CC­BY­NC­SA 4.0 license.
-1. All software code is licensed under GNU GPLv3. For commercial use or
-    alternative licensing, please contact legal@ga.co.
+ For commercial use or
+ alternative licensing, please contact mary@gmail.co.
+ship.com/building-a-json-api-with-rails-5/
