@@ -41,17 +41,16 @@ HTML, CSS, BOOTSTARP JAVASCRIPT, WEB API RESTFUL SERVICE, RUBY ON RAILS
 
 1. User sign up with email and password confirmation
 2. User should be a able to sign in with email and password
-3. User should able to sign in and change password with current and new password
-4. User should able to sign in and  show, create, update, and delete a product
-5. User should be able to get feedback after each action
+3. User should able to sign in and change password with current and new password=
+4. User should be able to get feedback after each action
 
 ## Unsolved problems
 1. Will add Join table to see which student has how many courses
 2. Will migrate to many to many relationship
 
-## [WireFrame] WireFrame https://github.com/MaryJosephA/product-client/tree/master/public/wireframe.JPG
+[WireFrame](https://github.com/MaryJosephA/student-client/tree/master/public/Wireframe.PNG)
 
-## [Student Table] Product Table  https://github.com/MaryJosephA/product-rails-api/tree/master/public/table.JPG
+[Courses Table](https://github.com/MaryJosephA/student-client/tree/master/public/ERD-Courses.png)
 
 ## [License](LICENSE)
 
