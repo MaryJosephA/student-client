@@ -40,9 +40,60 @@ const signOut = function () {
     }
   })
 }
-module.export = {
+const create = function (studentdata) {
+  // console.log('data: ', studentData)
+  return $.ajax({
+    url: config.apiUrl + '/courses',
+    method: 'POST',
+    headers: {
+      Authorization: `Token token=${store.user.token}`
+    },
+
+    data: studentdata
+  })
+}
+const showCourse = function (studentData) { /// ///////////////////////////////////////////////////////
+  return $.ajax({
+    url: config.apiUrl + '/courses',
+    method: 'GET',
+    headers: {
+      Authorization: `Token token=${store.user.token}`
+    }
+    // data: prodData
+
+  })
+}
+const updateCourse = function (studentData) {
+  // console.log(prodData.product.Id)
+  return $.ajax({
+    url: config.apiUrl + `/courses/${studentData.course.id}`,
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+      // Authorization: `Token token=${store.user.token}`
+    },
+    method: 'PATCH',
+    data: studentData
+  })
+}
+const deleteCourse = function (studentDataId) {
+  // prodData is empty! But I need the id
+  console.log('im trying to delete with studentData', studentDataId)
+  return $.ajax({
+    url: config.apiUrl + '/courses/' + studentDataId,
+    method: 'DELETE',
+    headers: {
+      Authorization: `Token token=${store.user.token}`
+      // Authorization: 'Token token=' + store.user.token
+    }
+  })
+}
+module.exports = {
   signUp,
   signIn,
   changePassword,
-  signOut
+  signOut,
+  create,
+  showCourse,
+  updateCourse,
+  deleteCourse
 }

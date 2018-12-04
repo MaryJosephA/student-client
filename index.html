@@ -16,28 +16,121 @@
     </head>
     <body>
       <h1>Freedom computer institute</h1>
-    <!-- <h3 id="display-message"></h3>
-      <form id="sign-up-form">
-        <input required placeholder="Enter Email" name="credentials[email]" type="email"/>
-        <input required placeholder="Enter Password" name="credentials[password]" type="password"/>
-        <input required placeholder="confirm Password" name="credentials[password_confirmation]" type="password"/>
-        <input type="submit"/>
-      </form> -->
+           <h3 id="display-message"></h3>
+           <div class="full-width-bar">
+    <form id="sign-out-form">
+      <button id="signout" type="button" class="btn btn-primary float-right">Logout</button>
+      <button id="changepassword" type="button" class="btn btn-primary float-right">Change Password</button>
+    </form>
+    <nav>
+      <button id="getCourseButton" type="button" class="btn btn-primary navbar-btn">Get List</button>
+      <button id="AddCourse" type="submit" class="btn btn-primary navbar-btn">Add List</button>
+      <button id="update" type="submit" class="btn btn-primary navbar-btn">Update List</button>
+      <!-- <button id="delete" type="submit" class="btn btn-primary navbar-btn">Remove List</button> -->
+
+    </nav>
+  </div>
+  <form id="change-password" class="form-signin">
+    <div class="form-group">
+      <input style="width: 20%; height: 100%" required placeholder="old password" name="passwords[old]" type="password" />
+    </div>
+    <div class="form-group">
+      <input style="width: 20%; height: 100%" required placeholder="New password" name="passwords[new]" type="password" />
+    </div>
+    <button type="submit" class="btn btn-primary">changePassword</button>
+  </form>
+  <form id="create-course" class="form-inline">
+    <div class="form-group">
+      <input required placeholder="Enter coursename" name="course[coursename]" type="text" />
+    </div>
+    <div class="form-group">
+      <input required placeholder="Enter coursenumber" name="course[coursenumber]" type="number" min="1" />
+    </div>
+    <button type="submit" class="btn btn-primary">save</button>
+  </form><br /><br />
+  <form id="update-course" class="form-inline">
+    <div class="form-group">
+      <input required placeholder="Enter coursename" name="course[coursename]" type="text" />
+    </div>
+    <div class="form-group">
+      <input required placeholder="Enter coursenumber" name="product[coursenumber]" type="number" min="1"/>
+    </div>
+    <div class="form-group">
+      <input type='text' name="course[id]" placeholder="Input course ID" />
+    </div>
+    <button type="submit" class="btn btn-primary">save</button>
+    <!-- <input id=updateproduct type="submit"value ="update"/> -->
+  </form>
+  <div id="content">
+  </div>
 
 
-          <form id="sign-up-form" class="form-signin">
-            <div class="form-group">
-              <input style="width: 20%; height: 100%" required placeholder="Enter Email" name="credentials[email]" type="email" />
+           <!-- <div class="jumbotron jumbotron-fluid">
+           <!- <div class="col-md-8 banner-sec">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                         <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          </ol>
+                    <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <img width="1980px" class="d-block img-fluid" src="https://static.pexels.com/photos/33972/pexels-photo.jpg" alt="First slide">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="banner-text">
+                    <h2>This is Heaven</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                </div>
+          </div>
             </div>
-            <div class="form-group">
-              <input style="width: 20%; height: 100%" required placeholder="Enter Password" name="credentials[password]" type="password" />
+            <div class="carousel-item">
+              <img  class="d-block img-fluid" src="https://images.pexels.com/photos/7097/people-coffee-tea-meeting.jpg" alt="First slide">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="banner-text">
+                    <h2>This is Heaven</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                </div>
             </div>
-            <div class="form-group">
-              <input style="width: 20%; height: 100%" required placeholder="confirm Password" name="credentials[password_confirmation]" type="password" />
             </div>
-            <input id="signup" type="submit"value="signup"/>
-            <!-- <button id="signup" type="submit" class="btn btn-primary">sign up</button> -->
-          </form><br /><br />
+            <div class="carousel-item">
+              <img  class="d-block img-fluid" src="https://images.pexels.com/photos/872957/pexels-photo-872957.jpeg" alt="First slide">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="banner-text">
+                    <h2>This is Heaven</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                </div>
+            </div>
+          </div>
+        </div> --> -->
+
+
+
+
+
+        <form width="100%" id="sign-up-form" class="form-signin">
+         <div class="form-group">
+           <input style="width: 20%; height: 100%" required placeholder="Enter Email" name="credentials[email]" type="email" />
+         </div>
+         <div class="form-group">
+           <input style="width: 20%; height: 100%" required placeholder="Enter Password" name="credentials[password]" type="password" />
+         </div>
+         <div class="form-group">
+           <input style="width: 20%; height: 100%" required placeholder="confirm Password" name="credentials[password_confirmation]" type="password" />
+         </div>
+         <button i type="submit" class="btn btn-primary">sign up</button>
+        </form><br /><br />
+        <form id="sign-in-form" class="form-signin">
+    <div class="form-group ">
+      <input class="h-100 d-inline-block" style="width: 20%; height: 100%" required placeholder="Enter Email" name="credentials[email]" type="email" />
+    </div>
+    <div class="form-group">
+      <input style="width: 20%; height: 100%" required placeholder="Enter Password" name="credentials[password]" type="password" />
+    </div>
+    <button style="width: 20%" type="submit" class="btn btn-primary btn block">Login</button><br /><br />
+    <!-- <h4 id=""> please click sign up to pantry list</h4> -->
+    <button style="width: 20%" id="signup" class="btn btn-primary btn block" type="submit">Register</button>
+  </form><br /><br />
+
 
     </body>
 </html>
