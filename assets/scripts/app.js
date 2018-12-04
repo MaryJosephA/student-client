@@ -1,5 +1,5 @@
 'use strict'
-
+const authEvents = require('./auth/events.js')
 // use require with a reference to bundle the file and use it in this file
 // const example = require('./example')
 
@@ -7,5 +7,8 @@
 // require('./example')
 
 $(() => {
+  $('#sign-up-form').on('submit', authEvents.onSignUp)
+  // $('#sign-in-form').on('submit', authEvents.onSignIn)
+  // $('#change-password').on('submit', authEvents.onChangePassword)
   // your JS code goes here
 })

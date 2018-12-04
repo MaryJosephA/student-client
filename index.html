@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+
     <head>
+
       <title>Freedom computer institute</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,8 +12,32 @@
       <!-- Do not add `script` tags-->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+
     </head>
     <body>
       <h1>Freedom computer institute</h1>
+    <!-- <h3 id="display-message"></h3>
+      <form id="sign-up-form">
+        <input required placeholder="Enter Email" name="credentials[email]" type="email"/>
+        <input required placeholder="Enter Password" name="credentials[password]" type="password"/>
+        <input required placeholder="confirm Password" name="credentials[password_confirmation]" type="password"/>
+        <input type="submit"/>
+      </form> -->
+
+
+          <form id="sign-up-form" class="form-signin">
+            <div class="form-group">
+              <input style="width: 20%; height: 100%" required placeholder="Enter Email" name="credentials[email]" type="email" />
+            </div>
+            <div class="form-group">
+              <input style="width: 20%; height: 100%" required placeholder="Enter Password" name="credentials[password]" type="password" />
+            </div>
+            <div class="form-group">
+              <input style="width: 20%; height: 100%" required placeholder="confirm Password" name="credentials[password_confirmation]" type="password" />
+            </div>
+            <input id="signup" type="submit"value="signup"/>
+            <!-- <button id="signup" type="submit" class="btn btn-primary">sign up</button> -->
+          </form><br /><br />
+
     </body>
 </html>
