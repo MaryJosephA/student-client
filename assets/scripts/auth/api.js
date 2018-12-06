@@ -3,7 +3,6 @@ const config = require('../config.js')
 const store = require('../store.js')
 
 const signUp = function (studentdata) {
-  console.log('sigup', studentdata)
   return $.ajax({
     url: config.apiUrl + '/sign-up',
     method: 'POST',
@@ -77,7 +76,7 @@ const updateCourse = function (studentData) {
 }
 const deleteCourse = function (studentDataId) {
   // prodData is empty! But I need the id
-  console.log('im trying to delete with studentData', studentDataId)
+  // console.log('im trying to delete with studentData', studentDataId)
   return $.ajax({
     url: config.apiUrl + '/courses/' + studentDataId,
     method: 'DELETE',

@@ -3,12 +3,9 @@ const api = require('./api.js')
 const ui = require('./ui.js')
 
 const onSignUp = function (events) {
-  console.log(events)
   event.preventDefault()
   const data = getFormFields(events.target)
-  console.log(events.target)
-  alert('Made it to onSignUp')
-  console.log(data)
+
   api.signUp(data)
     .then(ui.signUpSuccess)
     .catch(ui.signUpFailure)
