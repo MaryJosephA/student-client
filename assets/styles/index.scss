@@ -4,10 +4,11 @@ body{
   background-color: #fafbf5;
 }
 h1{
-  text-color: #85144b;
+  // text-decoration: #85144b;
   font-size: 40;
+  color: #85144b;
   text-align: center;
-  font-family: Gadget;
+  font-family: cursive;
 }
 //#eeebd9
 form{
@@ -100,8 +101,6 @@ div {
   display: block !important;
 }
 
-
-
 .banner-sec {
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,9 +141,6 @@ background:#fff;
 .banner-text p {
   color:#fff;
 }
-
-
-
 // .row {
 //   width: 100%;
 //   margin: 0 auto;
@@ -154,18 +150,14 @@ background:#fff;
 //   width: 100px;
 //   float: right;
 // }
-
-
 ////////////
-
-
 .img-fluid {
+    text-align: center;
     height: 50vh;
-    width: 2000px;
+    width: 1079px;
     background: rgba(28, 31, 39, 0)
     /* height: auto; */
 }
-
 
 .box {
   align-items: center;
