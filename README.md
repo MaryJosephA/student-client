@@ -18,16 +18,18 @@ HTML, CSS, BOOTSTARP JAVASCRIPT, scss, WEB API RESTFUL SERVICE, RUBY ON RAILS
 2. Downloaded the Browser Template
 3. Download this template.
 4. Replaced all the instance of browser template to student-client
-5. Initialized the project in the git using git init
+5. Initialized the project in the git using git  init
 6. Added all the filed using git add --all
 7. committed all the files using git commit origin master
 8. Created a new repository in git hub then ran npm Install
 9. created branches in the git
 10.scaffold the resources which created Model View and controller  and the
-  database schema automatically
+   database schema automatically
 11.Then changed the param to current user and run db migrate
 13.Curl Script the resources
 14.  Hosted the site in the Heroku
+
+
 
 
 ## Challenges faced
@@ -51,6 +53,9 @@ HTML, CSS, BOOTSTARP JAVASCRIPT, scss, WEB API RESTFUL SERVICE, RUBY ON RAILS
 [WireFrame](https://github.com/MaryJosephA/student-client/tree/master/public/Wireframe.PNG)
 
 [Courses Table](https://github.com/MaryJosephA/student-client/tree/master/public/ERD-Courses.png)
+
+<img width="1002" alt="screenshot of the app" src="https://media.git.generalassemb.ly/user/16276/files/a7618780-f965-11e8-908b-1560ebaa7da3">
+
 
 ## [License](LICENSE)
 

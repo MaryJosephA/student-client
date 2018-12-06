@@ -124,7 +124,9 @@ background:#fff;
 .banner-text{
   width:70%;
   position:absolute;
-  bottom:40px; padding-left:20px;
+  background-color: rgba(158, 158, 158, 0.2);
+  bottom:40px;
+  padding-left:20px;
 }
 .banner-text h2{
   color:#fff;
@@ -140,6 +142,7 @@ background:#fff;
   border-radius: 3px;}
 .banner-text p {
   color:#fff;
+  font-size:18px;
 }
 // .row {
 //   width: 100%;
@@ -154,7 +157,7 @@ background:#fff;
 .img-fluid {
     text-align: center;
     height: 50vh;
-    width: 1079px;
+    width: 100%;
     background: rgba(28, 31, 39, 0)
     /* height: auto; */
 }

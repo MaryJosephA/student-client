@@ -2,7 +2,7 @@ const store = require('../store.js')
 // const authEvents = require('./auth/events.js')
 
 const signUpSuccess = function () {
-  console.log('you are signedup')
+  // console.log('you are signedup')
   $('#display-message').html('Please log in')
   $('#display-message').css('color', 'green')
   $('#sign-in-form').show()
