@@ -3,7 +3,10 @@ const config = require('../config.js')
 const store = require('../store.js')
 
 const signUp = function (studentdata) {
+<<<<<<< HEAD
   // console.log('sigup', studentdata)
+=======
+>>>>>>> student-client
   return $.ajax({
     url: config.apiUrl + '/sign-up',
     method: 'POST',
