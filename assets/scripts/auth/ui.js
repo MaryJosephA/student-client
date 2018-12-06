@@ -142,43 +142,36 @@ const onCreateFailure = function (error) {
 const onShowCourses = function (response) {
   $('#content').html('')
   $('#update-course').hide()
+  const divHTML = (`
+   <div class="row">
+   <div class="col box grey"><strong>coursename</strong></div>
+   <div class="col box grey"><strong>coursenumber</strong></div>
+   <div class="col box grey"><strong>id</strong></div>
+   <div class="col box grey"><strong></strong></div>
+   </div>
+    `)
+  $('#content').append(divHTML)
+
   // loop through API response data
   response.courses.forEach(course => {
     // build HTML element with data
     //       const myClock = document.getElementById('delete')
     let buttonhtml = ''
-    let emailhtml = ''
+    // let emailhtml = ''
     if (course.editable === true) {
       buttonhtml = `<button data-id='${course.id}' type="submit" class="delete btn btn-primary navbar-btn">Delete</button>`
-      emailhtml = `<p data-user='${store.user.email}'>  ${store.user.email} </h4>`
+      // emailhtml = `<p data-user='${store.user.email}'>  ${store.user.email} </h4>`
     }
+
     const courseHTML = (`
 
-    <div class="table-container">
-      <table class="table table-striped">
-  <thead>
-  <tr>
-  <th scope="col">${buttonhtml}</th>
-  <th scope="col">${emailhtml}</th>
-  </tr>
-  <tr>
-    <th scope="row">product</th>
-    <td>quantity</td>
-    <td>id</td>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <th scope="col">${course.coursename}</th>
-    <th scope="col">${course.coursenumber}</th>
-    <th scope="col">${course.id}</th>
-
-  </tr>
-    </tbody>
-    </table>
-    </div>
+     <div class="row">
+     <div class="col box grey">${course.coursename}</div>
+     <div class="col box grey">${course.coursenumber}</div>
+     <div class="col box grey">${course.id}</div>
+     <div class="col box grey">${buttonhtml}</div>
+    </div>'
     `)
-
     $('#content').append(courseHTML)
   })
 }
@@ -251,6 +244,8 @@ const onDeleteFailure = function () {
   $('#content').html('')
   $('#display-message').css('color', 'Red')
   $('#delete-product').trigger('reset')
+
+// }
 
   // $('#message').removeClass()
   // $('#message').addClass('failure')
