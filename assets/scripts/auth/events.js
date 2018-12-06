@@ -3,17 +3,8 @@ const api = require('./api.js')
 const ui = require('./ui.js')
 
 const onSignUp = function (events) {
-<<<<<<< HEAD
-  // console.log(events)
-  event.preventDefault()
-  const data = getFormFields(events.target)
-  // console.log(events.target)
-  // console.log(data)
-=======
-  event.preventDefault()
   const data = getFormFields(events.target)
 
->>>>>>> student-client
   api.signUp(data)
     .then(ui.signUpSuccess)
     .catch(ui.signUpFailure)
