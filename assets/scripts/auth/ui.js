@@ -7,10 +7,6 @@ const signUpSuccess = function () {
   $('#sign-in-form').show()
   $('#sign-up-form').trigger('reset')
   $('#sign-up-form').hide()
-  // $('#getProductsButton').hide()
-  // $('#AddProduct').hide()
-  // $('#update').hide()
-  // $('#delete').hide()
 }
 const signUpFailure = function () {
   $('#display-message').html('sign up failed')
@@ -64,11 +60,10 @@ const signOutSuccess = function () {
   $('#sign-in-form').removeClass('hidden')
   $('#change-password').addClass('hidden')
   $('#create-course').hide()
-  $('#update-product').hide()
-  $('#delete-product').hide()
+  $('#update-course').hide()
   $('#changepassword').hide()
-  $('#getProductsButton').hide()
-  $('#AddProduct').hide()
+  $('#getCourseButton').hide()
+  $('#AddCourse').hide()
   $('#update').hide()
   $('#delete').hide()
   $('#content').html('')
@@ -92,7 +87,6 @@ const changePasswordFailure = function () {
   $('#change-password').hide()
 }
 const onCreateSuccess = function (response) {
-  // store.product = response.product
   $('#content').html('')
   const course = response.course
   const courseHTML = (`
@@ -243,13 +237,12 @@ const onDeleteFailure = function () {
   $('#content').html('')
   $('#display-message').css('color', 'Red')
   $('#delete-product').trigger('reset')
-
-// }
-
-  // $('#message').removeClass()
-  // $('#message').addClass('failure')
-  // console.error('onCreateFailure ran. Error is :', error)
 }
+
+// $('#message').removeClass()
+// $('#message').addClass('failure')
+// console.error('onCreateFailure ran. Error is :', error)
+
 module.exports = {
   signUpSuccess,
   signUpFailure,
